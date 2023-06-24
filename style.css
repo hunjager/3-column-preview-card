@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    height: calc(100vh - 0.1px);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#one{
+    background-color: hsl(31, 77%, 52%);
+}
+#two{
+    background-color: hsl(184, 100%, 22%);
+
+}
+#three{
+    background-color: hsl(179, 100%, 13%);
+
+}
+#one,#two,#three{
+    width: 220px;
+    padding: 50px;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+    margin-top: 30px;
+}
+p{  
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    width: 210px;
+    line-height: 25px;
+}
+button{
+    margin-top: 50px;
+    width: 150px;
+    border-radius: 2.5em;
+    height: 50px;
+    font-family:'Lexend Deca', sans-serif;
+}
+#one button{
+    color:hsl(31, 77%, 52%)
+}
+#one button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+#two button{
+    color: hsl(184, 100%, 22%);
+}
+#two button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+#three button{
+    color:hsl(179, 100%, 13%)
+}
+#three button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
