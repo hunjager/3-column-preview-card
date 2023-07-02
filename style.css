@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 body{
     margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
     display: grid;
-    height: calc(100vh - 0.1px);
+    height: 100vh;
+    width: 100vw;
 }
 .main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 #one{
     background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 #two{
     background-color: hsl(184, 100%, 22%);
@@ -21,6 +27,8 @@ body{
 }
 #three{
     background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 
 }
 #one,#two,#three{
@@ -53,6 +61,7 @@ button{
 #one button:hover{
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
 }
 #two button{
     color: hsl(184, 100%, 22%);
@@ -60,6 +69,7 @@ button{
 #two button:hover{
     background-color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
 }
 #three button{
     color:hsl(179, 100%, 13%)
@@ -67,4 +77,55 @@ button{
 #three button:hover{
     background-color: hsl(179, 100%, 13%);
     color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 890px){
+    body{
+        padding:0;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom:0  
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    p{
+        width: 100%;
+    }
+    #one,#two,#three{
+        width:60%;
+    }
+    #one{
+        border-radius: 0;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+    #two{
+        border-radius: 0;
+
+    }
+    #three{
+        border-radius: 0;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+    }
+    button{
+        margin-top: 15px;
+    }
+}
+@media (min-width:750px) {
+    #one,#two,#three{
+        width: 80%;
+    }
 }
