@@ -62,7 +62,9 @@ button{
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
     border-color: hsl(0, 0%, 95%);
+    cursor:pointer;
 }
+
 #two button{
     color: hsl(184, 100%, 22%);
 }
@@ -70,6 +72,7 @@ button{
     background-color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
     border-color: hsl(0, 0%, 95%);
+    cursor:pointer;
 }
 #three button{
     color:hsl(179, 100%, 13%)
@@ -78,6 +81,7 @@ button{
     background-color: hsl(179, 100%, 13%);
     color: hsl(0, 0%, 95%);
     border-color: hsl(0, 0%, 95%);
+    cursor:pointer;
 }
 
 @media (max-width: 890px){
