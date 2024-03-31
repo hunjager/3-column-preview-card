@@ -54,6 +54,12 @@ button{
     border-radius: 2.5em;
     height: 50px;
     font-family:'Lexend Deca', sans-serif;
+    border:none;
+}
+button:hover{
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor:pointer;
 }
 #one button{
     color:hsl(31, 77%, 52%)
@@ -61,7 +67,7 @@ button{
 #one button:hover{
     background-color: hsl(31, 77%, 52%);
     color: hsl(0, 0%, 95%);
-    border-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
     cursor:pointer;
 }
 
@@ -72,7 +78,7 @@ button{
     background-color: hsl(184, 100%, 22%);
     color: hsl(0, 0%, 95%);
     border-color: hsl(0, 0%, 95%);
-    cursor:pointer;
+
 }
 #three button{
     color:hsl(179, 100%, 13%)
@@ -80,11 +86,10 @@ button{
 #three button:hover{
     background-color: hsl(179, 100%, 13%);
     color: hsl(0, 0%, 95%);
-    border-color: hsl(0, 0%, 95%);
-    cursor:pointer;
+    
 }
 
-@media (max-width: 890px){
+@media (max-width: 1000px){
     body{
         padding:0;
         justify-content: center;
